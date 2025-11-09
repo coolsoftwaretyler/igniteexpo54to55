@@ -682,3 +682,18 @@ yarn web
 ```
 
 Web built, and also does not persist favorites, but other functionality is working. I'll have to dig into that a bit more.
+
+## iOS build errors
+
+Maybe we need xcode 26 to build this correctly? I'll try that instead. Here's what I'll do:
+
+1. Install Xcode 26
+2. `rm -rf node_modules android ios`
+3. `yarn`
+4. `yarn prebuild:clean`
+5. Make Xcode 26.1 my active Xcode
+6. Try building iOS again
+
+It built on the command line, although I'm having weird simulator stuff going on - just a black screen, but it opened the iPhone 18.6 simulator and I think I need iOS 26, so I'll do this from Xcode directly.
+
+Nice, that worked! Still not seeing favorites persist.
