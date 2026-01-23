@@ -697,3 +697,7 @@ Maybe we need xcode 26 to build this correctly? I'll try that instead. Here's wh
 It built on the command line, although I'm having weird simulator stuff going on - just a black screen, but it opened the iPhone 18.6 simulator and I think I need iOS 26, so I'll do this from Xcode directly.
 
 Nice, that worked! Still not seeing favorites persist.
+
+## Removing the patch with the Expo beta release
+
+When I upgraded to Expo@55.0.0-preview.5, I was able to remove the patch and build to Xcode 16.4 and 26.10 without issue.
